@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Blaze</string>
+    <string name="action_settings">Settings</string>
+    <string name="your_gender">Your gender?</string>
+    <string name="how_old">How old are you?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="done">DONE</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="where_you_go">Where do you want to go?</string>
+    <string name="map">MAP</string>
+    <string name="list">LIST</string>
+    <string name="sort_by">Sort by:</string>
+
+    <string name="open_close">OPEN/CLOSE</string>
+    <string name="distance">DISTANCE</string>
+    <string name="males">MALES</string>
+    <string name="females">FEMALES</string>
+    
+    <!-- Place String Array -->
+    <string-array name="place_name">
+        <item>RESTAURANTS</item>
+        <item>BARS</item>
+        <item>CLUBS</item>
+        <item>ENTERTAINMENT</item>
+        <item>FITNESS</item>
+    </string-array>
+
+    <string-array name="place_name_list">
+        <item>Some bar long long name 1</item>
+        <item>Some bar long long name 2</item>
+        <item>Some bar long long name 3</item>
+        <item>Some bar long long name 4</item>
+        <item>Some bar long long name 5</item>
+    </string-array>
+
+</resources>

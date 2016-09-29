@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CC4C44</color>
+    <color name="colorPrimaryDark">#CC4C44</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="app_background">#F8F8F8</color>
+    <color name="search_background">#B2302D</color>
+    <color name="list_button_color">#901614</color>
+    <color name="map_button_color">#A81F1D</color>
+    <color name="filter_button_color">#502624</color>
+
+    <color name="filter_sort_unselect">#D6DAE1</color>
+    <color name="filter_sort_select">#FAFBFE</color>
+</resources>

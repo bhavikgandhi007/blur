@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.blaze.PlaceListActivity">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/place_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            tools:popupTheme="@style/AppTheme.AppBarOverlay"
+            tools:theme="@style/ActionBarThemeOverlay">
+
+            <com.org.blaze.widget.CustomFontTextView
+                android:id="@+id/txt_toolbar_tile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/where_you_go"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:fontTypeTextView="segoeui-semibold.ttf" />
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:foreground="?android:windowContentOverlay">
+
+            <LinearLayout
+                android:id="@+id/linear_filter_bar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.org.blaze.widget.CustomFontTextView
+                    android:id="@+id/txt_filter_sort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/sort_by"
+                    android:gravity="center"
+                    android:text="@string/sort_by"
+                    android:textColor="@color/filter_button_color"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp"
+                    app:fontTypeTextView="segoeui.ttf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <com.org.blaze.widget.CustomFontTextView
+                        android:id="@+id/txt_filter_map"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/map_icon"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="@string/map"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        app:fontTypeTextView="segoeui.ttf" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?android:windowContentOverlay">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/place_list_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_background"
+                android:foreground="?android:windowContentOverlay"
+                android:scrollbarStyle="outsideOverlay">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:foreground="?android:windowContentOverlay"
+        android:elevation="4dp"
+        android:layout_height="50dp">
+        <antistatic.spinnerwheel.WheelHorizontalView
+            android:id="@+id/spinner_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:selectionDividerDimmedAlpha="100"
+            app:selectionDividerWidth="50dp"
+            app:visibleItems="10"
+            app:isAllVisible="true"
+            app:isShader="true"
+            app:selectionDivider="@drawable/toolbar_shadow"
+            android:background="#CCCC3D3C" />
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- static data for Home Activity -->
+    <integer-array name="place_drwable">
+        <item>@drawable/restaurants_banner</item>
+        <item>@drawable/bars_banner</item>
+        <item>@drawable/club_banner</item>
+        <item>@drawable/entertaiment_banner</item>
+        <item>@drawable/fitness_banner</item>
+    </integer-array>
+    <integer-array name="place_icon">
+        <item>@drawable/icon_restaurants</item>
+        <item>@drawable/icon_bar</item>
+        <item>@drawable/icon_clubs</item>
+        <item>@drawable/icon_entertaiment</item>
+        <item>@drawable/icon_fitness</item>
+    </integer-array>
+
+    <!-- static data for Place List Activity -->
+    <integer-array name="place_store_img">
+        <item>@drawable/bar_store1</item>
+        <item>@drawable/bar_store1</item>
+        <item>@drawable/bar_store1</item>
+        <item>@drawable/bar_store1</item>
+        <item>@drawable/bar_store1</item>
+    </integer-array>
+
+</resources>
